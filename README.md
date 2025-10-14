@@ -44,7 +44,7 @@ Install with :
 - main.py           : Main Streamlit app
 - .env              : Stores your Gemini API key
 - requirements.txt  : Project dependencies
-- README.txt        : You're reading it!
+- README.md        : You're reading it!
 
 ---------------------------
 🛡️ Notes
