@@ -1,19 +1,20 @@
 # 🌟 Gemini AI Chatbot (Streamlit)
 
-A simple, interactive AI chatbot powered by Google's Gemini (2.5 Flash) model,
-built using Streamlit.
+A powerful, interactive AI chatbot powered by Google's **Gemini 2.5 Flash** model,
+built using Streamlit. This version features a native chat interface and robust error handling.
 
 ---------------------------
 🔧 Requirements
 ---------------------------
-- Python 3.8+
-- [Streamlit](https://streamlit.io/)
-- [google-generativeai](https://pypi.org/project/google-generativeai/)
-- [python-dotenv](https://pypi.org/project/python-dotenv/)
+- **Python 3.8+**
+- **[Streamlit](https://streamlit.io/) (For the web application framework)**
+- **[google-generativeai](https://pypi.org/project/google-generativeai/) (For connecting to the Gemini API)**
+- **[python-dotenv](https://pypi.org/project/python-dotenv/) (For managing the API key)**
 
-Install with :
-     pip install -r requirements.txt
-
+  ### Installation :
+    ```bash
+    pip install -r requirements.txt
+    ```
 ---------------------------
 🚀 How to Run the App
 ---------------------------
@@ -21,30 +22,35 @@ Install with :
 1. Clone or Download this project.
 
 2. Edit `.env` file and add your Gemini API key :
-    GEMINI_API_KEY = "your_api_key_here"
+   **GEMINI_API_KEY = "your_api_key_here"**
 
 3. Download Requirements Using pip :
-     pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 4. Run the app using Streamlit :
-    python -m streamlit run main.py
-
-5. Open the app in your browser and start chatting!
+   ```bash
+   python -m streamlit run main.py
+   ```
+6. Open the app in your browser and start chatting!
 
 ---------------------------
-💡 Features
+💡 Enhanced Features
 ---------------------------
-- Real-time AI responses using Gemini
-- Chat history retained during session
-- Easy to use, responsive UI
+- **Native Chat UI** : Uses Streamlit's st.chat_message for a modern, fluid conversational experience.
+- **Response Streaming** : Provides real-time output from the Gemini model.
+- **Persistent Chat History** : Maintains conversation context across sessions.
+- **Clear Controls** : Includes a sidebar button to easily clear the chat history.
+- **Robust Error Handling** : Includes specific handling for API errors like **Quota Exceeded** and **Permission Denied**.
 
 ---------------------------
 📁 File Structure
 ---------------------------
-- main.py           : Main Streamlit app
-- .env              : Stores your Gemini API key
-- requirements.txt  : Project dependencies
-- README.md        : You're reading it!
+- chatbot.py           : Main Streamlit app
+- `.env`                 : Stores your Gemini API key
+- requirements.txt     : Project dependencies
+- README.md            : You're reading it!
 
 ---------------------------
 🛡️ Notes
