@@ -31,7 +31,7 @@ built using Streamlit. This version features a native chat interface and robust 
 
 4. Run the app using Streamlit :
    ```bash
-   python -m streamlit run main.py
+   python -m streamlit run chatbot.py
    ```
 6. Open the app in your browser and start chatting!
 
