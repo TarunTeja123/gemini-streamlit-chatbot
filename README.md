@@ -1,7 +1,7 @@
 # 🌟 Gemini AI Chatbot (Streamlit)
 
 A powerful, interactive AI chatbot powered by Google's **Gemini 2.5 Flash** model,
-built using Streamlit. This version features a native chat interface and robust error handling.
+built using Streamlit. This version features a native chat interface and is capable of processing text and images in the same conversation.
 
 ---------------------------
 🔧 Requirements
@@ -10,6 +10,7 @@ built using Streamlit. This version features a native chat interface and robust 
 - **[Streamlit](https://streamlit.io/) (For the web application framework)**
 - **[google-generativeai](https://pypi.org/project/google-generativeai/) (For connecting to the Gemini API)**
 - **[python-dotenv](https://pypi.org/project/python-dotenv/) (For managing the API key)**
+- **[Pillow (PIL)](https://pypi.org/project/pillow/) (For image processing)**
 
   ### Installation :
     ```bash
@@ -40,9 +41,11 @@ built using Streamlit. This version features a native chat interface and robust 
 ---------------------------
 - **Native Chat UI** : Uses Streamlit's st.chat_message for a modern, fluid conversational experience.
 - **Response Streaming** : Provides real-time output from the Gemini model.
-- **Persistent Chat History** : Maintains conversation context across sessions.
+- **Persistent Chat History** : Maintains conversation context, including previously uploaded images.
 - **Clear Controls** : Includes a sidebar button to easily clear the chat history.
-- **Robust Error Handling** : Includes specific handling for API errors like **Quota Exceeded** and **Permission Denied**.
+- **Robust Error Handling** : Includes handling for All errors.
+- **Multimodal Input** : The chatbot now accepts both text and image files (PNG, JPG, JPEG) in a single prompt.
+- **Image Display** : Uploaded images are rendered directly in the user's chat message.
 
 ---------------------------
 📁 File Structure
